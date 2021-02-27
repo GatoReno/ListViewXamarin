@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hwhdTIX9IZ1jps4NnGbjvYI0TyrE1q9QeTiMZoRQEqdej+12VRK7UxzApvePOzmQ1+wyTZOjFr48zoTCHUp7YQ==",
+  "success": true,
+  "projectFilePath": "/Users/edrodriguez/projects/DataTemplate/DataTemplate.iOS/DataTemplate.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/edrodriguez/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/edrodriguez/.nuget/packages/xamarin.forms/4.8.0.1451/xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}

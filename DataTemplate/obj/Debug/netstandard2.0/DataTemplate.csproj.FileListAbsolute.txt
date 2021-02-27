@@ -1,0 +1,14 @@
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/DataTemplate.AssemblyInfoInputs.cache
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/DataTemplate.AssemblyInfo.cs
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/DataTemplate.csproj.CoreCompileInputs.cache
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/bin/Debug/netstandard2.0/DataTemplate.deps.json
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/bin/Debug/netstandard2.0/DataTemplate.dll
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/bin/Debug/netstandard2.0/ref/DataTemplate.dll
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/bin/Debug/netstandard2.0/DataTemplate.pdb
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/DataTemplate.dll
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/ref/DataTemplate.dll
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/DataTemplate.pdb
+/Users/edrodriguez/projects/DataTemplate/DataTemplate/obj/Debug/netstandard2.0/DataTemplate.csprojAssemblyReference.cache

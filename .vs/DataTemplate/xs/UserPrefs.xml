@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{768E2F14-FE74-4AAD-899A-52B5583140C9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataTemplate/MainPage.xaml">
+    <Files>
+      <File FileName="DataTemplate/MainPage.xaml.cs" Line="19" Column="1" />
+      <File FileName="DataTemplate/MainPage.xaml" Line="71" Column="1" />
+      <File FileName="DataTemplate/VM/SecondViewModel.cs" Line="27" Column="1" />
+      <File FileName="DataTemplate/Models/PaymentsAndDevicesModel.cs" Line="1" Column="1" />
+      <File FileName="DataTemplate/Models/MockResponse.cs" Line="1" Column="1" />
+      <File FileName="DataTemplate.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="DataTemplate/App.xaml.cs" Line="14" Column="1" />
+      <File FileName="DataTemplate.iOS/AppDelegate.cs" Line="28" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DataTemplate" expanded="True">
+            <Node name="DataTemplate" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="VM" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" selected="True" />
+            </Node>
+            <Node name="DataTemplate.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DataTemplate.Android FirstBuild="True" PreferredExecutionTarget="Android.pixel_3a_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.ItemProperties.DataTemplate.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E4DE85FD-1D12-47E9-A617-DE6112D9EBF7" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/edrodriguez/projects/DataTemplate/DataTemplate/VM/SecondViewModel.cs" relfile="DataTemplate/VM/SecondViewModel.cs" line="26" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
