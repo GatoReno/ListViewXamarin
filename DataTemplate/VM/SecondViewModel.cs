@@ -9,6 +9,7 @@ namespace DataTemplate.VM
 {
     public class SecondViewModel : INotifyPropertyChanged 
     {
+
         private bool _isRefreshing;
  
 
@@ -17,13 +18,16 @@ namespace DataTemplate.VM
             get => _isRefreshing;
             set => OnPropertyChanged("IsRefreshing");
         }
+
+        public ICommand LoadChargesAndPaymentsCommand { get; set; }
         public ObservableCollection<PaymentsAndDevicesModel> PaymentsAndDevices { get; set; }
         public ICommand OnRefreshCommand { get; set; }
         public SecondViewModel()
         {
             OnRefreshCommand = new Command(async()=> await RefreshCommand());
             PaymentsAndDevices = new ObservableCollection<PaymentsAndDevicesModel>();
-            LoadPaymentsAndDevices();
+            LoadChargesAndPaymentsCommand = new Command(async () => await RefreshCommand());
+            LoadChargesAndPaymentsCommand.Execute(null);
         }
 
         private async Task RefreshCommand()
@@ -34,9 +38,21 @@ namespace DataTemplate.VM
             Random rdn = new Random();
             for (int i = 0; i < 2; i++)
             {
+              
                 PaymentsAndDevices.Add(new PaymentsAndDevicesModel() {
                     Number = rdn.Next().ToString(),
-                    Name = "I'm a payment"
+                    Name = "I'm a payment",
+                    Type = "Payment"
+                });
+            }
+            for (int i = 0; i < 1; i++)
+            {
+
+                PaymentsAndDevices.Add(new PaymentsAndDevicesModel()
+                {
+                    Number = rdn.Next().ToString(),
+                    Name = "I'm a device",
+                    Type = "Device"
                 });
             }
             IsRefreshing = false;

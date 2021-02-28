@@ -2,7 +2,27 @@
 <ContentPage
     x:Class="DataTemplate.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:DataTemplate.DataTemplates"
+    xmlns:tempS="clr-namespace:DataTemplate.TemplateSelector"
+    x:Name="this">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--  cell types  -->
+            <DataTemplate x:Key="PaymentViewCell">
+                <controls:PaymentViewCell />
+            </DataTemplate>
+
+            <DataTemplate x:Key="DeviceViewCell">
+                <controls:DeviceViewCell />
+            </DataTemplate>
+            <!--  template selector  -->
+            <tempS:PaymentTypeTemplateSelector
+                x:Key="PaymentTypeTemplateSelector"
+                DeviceTemplate="{StaticResource DeviceViewCell}"
+                PaymentTemplate="{StaticResource PaymentViewCell}" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <StackLayout>
         <Frame
@@ -25,57 +45,17 @@
             FontSize="16"
             Text="ListView!Data template" />
 
-        <ListView
-            HasUnevenRows="True"
-            IsPullToRefreshEnabled="True"
-            IsRefreshing="{Binding IsRefreshing}"
-            ItemsSource="{Binding PaymentsAndDevices}"
-            RefreshCommand="{Binding OnRefreshCommand}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.ContextActions>
-                            <MenuItem
-                                Command="{Binding okCommand}"
-                                CommandParameter="{Binding .}"
-                                Text="ok" />
-                            <MenuItem
-                                Command="{Binding okCommand}"
-                                CommandParameter="{Binding .}"
-                                Text="done" />
-                            <MenuItem
-                                Command="{Binding okCommand}"
-                                CommandParameter="{Binding .}"
-                                Text="order" />
-                        </ViewCell.ContextActions>
-                        <StackLayout Padding="20">
+        <StackLayout Padding="30,10,30,10">
+            <ListView
+                HasUnevenRows="True"
+                IsPullToRefreshEnabled="True"
+                IsRefreshing="{Binding IsRefreshing}"
+                ItemTemplate="{StaticResource PaymentTypeTemplateSelector}"
+                ItemsSource="{Binding PaymentsAndDevices}"
+                RefreshCommand="{Binding OnRefreshCommand}" />
+        </StackLayout>
 
-                            <Label Text="{Binding Name}" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
 
-        <!--<Label
-            Padding="30,0,30,0"
-            FontSize="16"
-            Text="ListView!" />
-        <ListView
-            HasUnevenRows="True"
-            ItemTapped="ListView_ItemTapped"
-            ItemsSource="{Binding PaymentsAndDevices}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="20" Orientation="Horizontal">
-                            <Label Text="{Binding Name}" />
-                            <Label Text="{Binding Number, StringFormat='{}({0})'}" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>-->
 
     </StackLayout>
 

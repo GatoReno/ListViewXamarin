@@ -18,6 +18,7 @@
   <ItemGroup>
     <Folder Include="VM\" />
     <Folder Include="Models\" />
-    <Folder Include="DataTemplates\" />
+    <Folder Include="Controls\" />
+    <Folder Include="TemplateSelector\" />
   </ItemGroup>
 </Project>
